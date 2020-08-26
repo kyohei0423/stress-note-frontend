@@ -1,9 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 function Index() {
   return (
     <>
+      <Head>
+        <title>StressNote | Home</title>
+      </Head>
       <div>
         <h1>Top</h1>
         <ul>
