@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@atoms/*": ["components/*"],
+      "@redux/*": ["redux/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
