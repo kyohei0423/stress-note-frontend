@@ -6,7 +6,7 @@ type State = {
 
 const initialState = {};
 
-const authenticationSlice = createSlice({
+export const authenticationSlice = createSlice({
   name: "authentication",
   initialState,
   reducers: {
@@ -19,6 +19,5 @@ const authenticationSlice = createSlice({
   },
 });
 
-export default authenticationSlice;
 export const authenticationActions = authenticationSlice.actions;
 export const authenticationReducer = authenticationSlice.reducer;
