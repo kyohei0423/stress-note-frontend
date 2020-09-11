@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+import { Action } from "@redux/types";
+
 type State = {
   id: number;
 };
@@ -10,7 +12,7 @@ export const authenticationSlice = createSlice({
   name: "authentication",
   initialState,
   reducers: {
-    login: (state: State, action: redux.Action<State>) => {
+    login: (state: State, action: Action<State>) => {
       return { ...state, ...action.payload };
     },
     logout: () => {
