@@ -20,5 +20,10 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint"],
-  rules: {},
+  rules: {
+    "import/no-unresolved": 0, // Next.jsが設定してるmodule aliasがあるため、無効にする
+    "react/jsx-filename-extension": [2, { extensions: [".tsx"] }], // tsxファイルを対象にする
+    "react/react-in-jsx-scope": 0, // Next.jsでは、自動でReactをimportするので無効にする
+    "@typescript-eslint/explicit-module-boundary-types": 0, // 型推論を使用するため明示的に戻り地の型を指定しなくても良い
+  },
 };
