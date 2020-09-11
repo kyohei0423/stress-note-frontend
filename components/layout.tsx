@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-function Layout({ children, subTitle }) {
+export default function Layout({ children, subTitle }: props) {
   return (
     <>
       <Head>
@@ -10,5 +10,3 @@ function Layout({ children, subTitle }) {
     </>
   );
 }
-
-export default Layout;
