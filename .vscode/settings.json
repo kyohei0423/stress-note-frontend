@@ -1,3 +1,10 @@
 {
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "eslint.probe": [
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.run": "onSave"
 }
