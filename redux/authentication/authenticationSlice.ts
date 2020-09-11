@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-type state = {
+type State = {
   id: number;
 };
 
-const initialState = { id: null };
+const initialState = {};
 
 const authenticationSlice = createSlice({
   name: "authentication",
   initialState,
   reducers: {
-    login: (state: state, action: redux.action<state>) => {
+    login: (state: State, action: redux.Action<State>) => {
       return { ...state, ...action.payload };
     },
     logout: () => {
