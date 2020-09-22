@@ -17,6 +17,7 @@
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^6.8.4",
     "react-redux": "^7.2.1"
   },
   "devDependencies": {
