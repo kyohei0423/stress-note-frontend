@@ -1,6 +1,6 @@
-import Layout from "@atoms/layout";
 import { useForm } from "react-hook-form";
 
+import Layout from "@atoms/layout";
 type FormData = {
   email: string;
   password: string;
