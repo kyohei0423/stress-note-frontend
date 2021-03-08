@@ -16,6 +16,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@hooks/*": ["hooks/*"],
       "@atoms/*": ["components/*"],
       "@redux/*": ["redux/*"]
     }
