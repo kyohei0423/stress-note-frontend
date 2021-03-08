@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 
 import Layout from "@atoms/layout";
+
+import { getFirebaseAuth } from "infra/firebase";
 type FormData = {
   email: string;
   password: string;
@@ -10,6 +12,12 @@ function Signup() {
   const { register, handleSubmit, errors } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
+    const auth = getFirebaseAuth();
+    const { email, password } = data;
+    try {
+      const res = await auth.createUserWithEmailAndPassword(email, password);
+    } catch (err) {
+    }
   };
 
   return (
